@@ -8,7 +8,7 @@ import SkillLayout from '../components/SkillLayout.astro'
 import PostPreview from '@/components/blog/PostPreview.astro'
 
 import { Image } from 'astro:assets'
-import astro from '../assets/about-astro.png'
+import astro from '../assets/headshot.jpeg'
 
 import { getAllPosts, sortMDByDate } from '@/utils'
 
@@ -85,12 +85,10 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 			</div>
 		</section>
 
-		<Section title='About'>
+		<!-- <Section title='About'>
 			<p class='text-muted-foreground'>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque quia omnis
-				consectetur, voluptas praesentium veniam blanditiis ratione asperiores accusantium laborum
-				odit commodi quis deserunt incidunt et dolor iure ut! Lorem ipsum dolor sit, amet
-				consectetur adipisicing elit. Alias quia, doloribus ut beatae perspiciatis voluptatibus.
+				Undergraduate computer science student interested in machine learning, computer vision, and software engineering. I plan on acquiring a Master's 
+				degree in computer science.
 			</p>
 		</Section>
 		{
@@ -105,26 +103,74 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 					</ul>
 				</Section>
 			)
-		}
+		} -->
 
 		<Section title='Experience'>
 			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
+				heading='Purdue University'
+				subheading='omputing Research Intern'
+				date='May 2024 - Aug 2024'
 				imagePath='/src/assets/about-astro.png'
 				altText='Lorem, ipsum dolor sit'
 				imageClass='h-12 w-auto md:-left-16'
 			>
 				<ul class='ml-4 list-disc text-muted-foreground'>
 					<li>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-						molestiae laboriosam pariatur!
+						Queue Time Prediction ML: Working on Anvil, a globally ranked top 500 high performance
+						computing system, developed a multi stage deep neural network model with PyTorch for predicting
+						queue times of jobs submitted to Anvil. Work performed under Purdue’s RCAC REU program
 
-						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
+						<li>Research Paper: Main authored and presented a research paper on this work at an SC24 workship,
+							the world’s largest HPC conference.
+							Paper: A Hierarchical Deep Learning Approach for Predicting Job Queue Times in HPC Systems</li>
 					</li>
 				</ul>
 			</Card>
+
+			<Card
+				heading='Purdue University'
+				subheading='Computing Research Intern - West Lafayette, IN'
+				date='May 2024 - Aug 2024'
+				imagePath='/src/assets/about-astro.png'
+				altText='Lorem, ipsum dolor sit'
+				imageClass='h-12 w-auto md:-left-16'
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>
+						Queue Time Prediction ML: Working on Anvil, a globally ranked top 500 high performance
+						computing system, developed a multi stage deep neural network model with PyTorch for predicting
+						queue times of jobs submitted to Anvil. Work performed under Purdue’s RCAC REU program
+
+						<li>Research Paper: Main authored and presented a research paper on this work at an SC24 workship,
+							the world’s largest HPC conference.
+							Paper: A Hierarchical Deep Learning Approach for Predicting Job Queue Times in HPC Systems</li>
+					</li>
+				</ul>
+			</Card>
+
+			<Card
+				heading='Indigo BioAutomation'
+				subheading='Software Development Intern - Carmel, IN'
+				date='May 2023 - Aug 2023'
+				imagePath='/src/assets/about-astro.png'
+				altText='Lorem, ipsum dolor sit'
+				imageClass='h-12 w-auto md:-left-16'
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>
+						Peak Picker Visualizer: For a liquid chromatography/mass spectrometry system, created a
+						program to communicate between C++ and Python to plot and analyze data in a robust, interactive
+						Python GUI using both C++ and Python including Protobuf, Numpy, Matplotlib, and Tkinter libraries
+
+						<li>
+						Baseline Algorithm ML: Using the XGBoost library in Python and C++, created a class to model
+						a composite baseline for a chromatogram using a gradient boosting algorithm
+						</li>
+					</li>
+				</ul>
+			</Card>
+
+
 			<Card
 				heading='Lorem Ipsum'
 				subheading='Sit amet consectetur'
@@ -136,10 +182,10 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 		</Section>
 
 		<Section title='Education'>
-			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
+			<!-- <Card
+				heading='Purdue University'
+				subheading='B.S. in Computer Science'
+				date='Aug 2021 - Dec 2024'
 				imagePath='/src/assets/about-astro.png'
 				altText='Lorem, ipsum dolor sit'
 				imageClass='h-12 w-auto md:-left-16'
@@ -152,11 +198,11 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
 					</li>
 				</ul>
-			</Card>
+			</Card> -->
 			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
+				heading='Purdue University'
+				subheading='B.S. in Computer Science'
+				date='Aug 2021 - Dec 2024'
 				imagePath='/src/assets/about-astro.png'
 				altText='Lorem, ipsum dolor sit'
 				imageClass='h-12 w-auto md:-left-16'
